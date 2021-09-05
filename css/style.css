@@ -1,3 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+* {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+}
 .hidden {
   display: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+.login-form {
+  margin-bottom: 80px;
+}
+.greeting {
+  font-size: 48px;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+.clock {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+input {
+  border: none;
+  border-bottom: 1px solid;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+ul {
+  display: flex;
+}
+li {
+  font-size: 22px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+li button {
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 28px;
+  padding-bottom: 4px;
+}
+.quote {
+  margin-bottom: 20px;
 }

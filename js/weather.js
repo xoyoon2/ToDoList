@@ -7,7 +7,7 @@ function onGeoSuccess(position) {
     .then((response) => response.json())
     .then((data) => {
       const city = document.querySelector(".weather__city");
-      city.innerText = data.name;
+      city.innerText = `@${data.name}`;
       const weather = document.querySelector(".weather__weather");
       weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
     });
