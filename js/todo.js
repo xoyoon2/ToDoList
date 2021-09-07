@@ -21,6 +21,8 @@ function deleteToDo(event) {
   const toDoText = event.path[1].querySelector("span").innerText;
   const localArray = JSON.parse(localStorage.getItem(TODOS_KEY));
   const idx = localArray.indexOf(toDoText);
+  const toDosidx = toDos.indexOf(toDoText);
+  toDos.splice(toDosidx, 1);
   localArray.splice(idx, 1);
   localStorage.setItem(TODOS_KEY, JSON.stringify(localArray));
   event.path[1].remove();
